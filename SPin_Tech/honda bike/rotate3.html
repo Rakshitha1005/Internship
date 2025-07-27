@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>360 view</title>
+    <link rel="stylesheet" type="text/css" href="style3.css">
+
+</head>
+<body>
+    <div class="card" id="card">
+         <!-- Left Arrow -->
+         <div class="arrow left-arrow" onclick="rotateRight()">&#8249;</div>
+
+         <!-- Right Arrow -->
+         <div class="arrow right-arrow" onclick="rotateLeft()">&#8250;</div>
+        <span style="--i:0;"></span>
+        <img src="img1/img01.jpg">
+        <div class="dot" style="top: 18%; left: 45%;" onclick="togglePopup(this)"></div>
+        <div class="popup" style="top: 23%; left: 45%;">
+            <strong class="p1">Headlight</strong><br>
+            <form class="F1">
+            <input type="checkbox" id="Damage" name="Damage" value="Scooty">
+            <label for="Damage">Damage</label><br>
+            <input type="checkbox" id="Fitment" name="Fitment" value="Scooty">
+            <label for="Fitment">Fitment</label><br>
+            <input type="checkbox" id="faulty" name="Faulty" value="Scooty">
+            <label for="Faulty">Faulty</label>
+            </form>
+        </div>
+
+        <span style="--i:1;"></span>
+        <img src="img1/img02.jpg">
+        <div class="dot" style="top: 60%; left: 60%; display: none;" onclick="togglePopup(this)"></div>
+        <div class="popup" style="top: 65%; left: 60%;">
+            <strong class="p1">Flywheel</strong><br>
+            <form class="F1">
+            <input type="checkbox" id="Damage" name="Damage" value="Scooty">
+            <label for="Damage">Damage</label><br>
+            <input type="checkbox" id="Fitment" name="Fitment" value="Scooty">
+            <label for="Fitment">Fitment</label><br>
+            <input type="checkbox" id="faulty" name="Faulty" value="Scooty">
+            <label for="Faulty">Faulty</label>
+            </form>
+        </div>
+
+        <span style="--i:1;"></span>
+        <img src="img1/img9.jpg">
+        <div class="dot" style="top: 70%; left: 60%; display: none;" onclick="togglePopup(this)"></div>
+        <div class="popup" style="top: 75%; left: 60%;">
+            <strong class="p1">Stand</strong><br>
+            <form class="F1">
+            <input type="checkbox" id="Damage" name="Damage" value="Scooty">
+            <label for="Damage">Damage</label><br>
+            <input type="checkbox" id="Fitment" name="Fitment" value="Scooty">
+            <label for="Fitment">Fitment</label><br>
+            <input type="checkbox" id="Spring" name="Spring" value="Scooty">
+            <label for="Spring">Spring</label>
+            </form>
+        </div>
+
+        <span style="--i:1;"></span>
+        <img src="img1/img12.jpg">
+        <div class="dot" style="top: 50%; left: 50%; display: none;" onclick="togglePopup(this)"></div>
+        <div class="popup" style="top: 55%; left: 50%;">
+            <strong class="p1">Frame</strong><br>
+            <form class="F1">
+            <input type="checkbox" id="Damage" name="Damage" value="Scooty">
+            <label for="Damage">Damage</label><br>
+            <input type="checkbox" id="Fitment" name="Fitment" value="Scooty">
+            <label for="Fitment">Fitment</label><br>
+            <input type="checkbox" id="color" name="color" value="Scooty">
+            <label for="color">Colour</label>
+            </form>
+        </div>
+
+        <span style="--i:1;"></span>
+        <img src="img1/img15.jpg">
+        <div class="dot" style="top: 50%; left: 40%; display: none;" onclick="togglePopup(this)"></div>
+        <div class="popup" style="top: 55%; left: 40%;">
+            <strong class="p1">Tail Light</strong><br>
+            <form class="F1">
+            <input type="checkbox" id="Damage" name="Damage" value="Scooty">
+            <label for="Damage">Damage</label><br>
+            <input type="checkbox" id="Fitment" name="Fitment" value="Scooty">
+            <label for="Fitment">Fitment</label><br>
+            <input type="checkbox" id="faulty" name="Faulty" value="Scooty">
+            <label for="Faulty">Faulty</label>
+            </form>
+        </div>
+
+        
+        <span style="--i:1;"></span>
+        <img src="img1/img19.jpg">
+        <div class="dot" style="top: 10%; left: 55%; display: none;" onclick="togglePopup(this)"></div>
+        <div class="popup" style="top: 15%; left: 55%;">
+            <strong class="p1">Meter</strong><br>
+            <form class="F1">
+            <input type="checkbox" id="Damage" name="Damage" value="Scooty">
+            <label for="Damage">Damage</label><br>
+            <input type="checkbox" id="Fitment" name="Fitment" value="Scooty">
+            <label for="Fitment">Fitment</label><br>
+            <input type="checkbox" id="faulty" name="Faulty" value="Scooty">
+            <label for="Faulty">Faulty</label>
+            </form>
+        </div>
+
+
+        <span style="--i:1;"></span>
+        <img src="img1/img25.jpg">
+        <div class="dot" style="top: 5%; left: 45%; display: none;" onclick="togglePopup(this)"></div>
+        <div class="popup" style="top: 10%; left: 45%;">
+            <strong class="p1">Mirror</strong><br>
+            <form class="F1">
+            <input type="checkbox" id="Damage" name="Damage" value="Scooty">
+            <label for="Damage">Damage</label><br>
+            <input type="checkbox" id="Fitment" name="Fitment" value="Scooty">
+            <label for="Fitment">Fitment</label><br>
+            <input type="checkbox" id="faulty" name="Faulty" value="Scooty">
+            <label for="Faulty">Faulty</label>
+            </form>
+        </div>
+
+        <span style="--i:1;"></span>
+        <img src="img1/img26.jpg">
+        <div class="dot" style="top: 30%; left: 45%; display: none;" onclick="togglePopup(this)"></div>
+        <div class="popup" style="top: 35%; left: 45%;">
+            <strong class="p1">Seat</strong><br>
+            <form class="F1">
+            <input type="checkbox" id="Damage" name="Damage" value="Scooty">
+            <label for="Damage">Damage</label><br>
+            <input type="checkbox" id="Fitment" name="Fitment" value="Scooty">
+            <label for="Fitment">Fitment</label><br>
+            <input type="checkbox" id="color" name="color" value="Scooty">
+            <label for="color">Colour</label>
+            </form>
+        </div>
+
+        <span style="--i:1;"></span>
+        <img src="img1/img27.jpg">
+        <div class="dot" style="top: 70%; left: 65%; display: none;" onclick="togglePopup(this)"></div>
+        <div class="popup" style="top: 75%; left: 65%;">
+            <strong class="p1">Wheel</strong><br>
+            <form class="F1">
+            <input type="checkbox" id="Damage" name="Damage" value="Scooty">
+            <label for="Damage">Damage</label><br>
+            <input type="checkbox" id="Fitment" name="Fitment" value="Scooty">
+            <label for="Fitment">Fitment</label><br>
+            <input type="checkbox" id="faulty" name="Faulty" value="Scooty">
+            <label for="Faulty">Faulty</label>
+            </form>
+        </div>
+
+        <span style="--i:1;"></span>
+        <img src="img1/img28.jpg">
+        <div class="dot" style="top: 60%; left: 60%; display: none;" onclick="togglePopup(this)"></div>
+        <div class="popup" style="top: 65%; left: 60%;">
+            <strong class="p1">Fender</strong><br>
+            <form class="F1">
+            <input type="checkbox" id="Damage" name="Damage" value="Scooty">
+            <label for="Damage">Damage</label><br>
+            <input type="checkbox" id="Fitment" name="Fitment" value="Scooty">
+            <label for="Fitment">Fitment</label><br>
+            <input type="checkbox" id="faulty" name="Faulty" value="Scooty">
+            <label for="Faulty">Faulty</label>
+            </form>
+        </div>
+        
+        <!-- Continue with other images and dots if needed -->
+
+         <!-- Submit Button -->
+         <div class="submit-button" onclick="submitForm()">Submit</div>
+    </div>
+
+    <script>
+        const card = document.getElementById('card');
+        let currentIndex = 0;
+        let isDragging = false;
+        let startPositionX = 0;
+        let lastPositionX = 0;
+        let rotationSpeed = 0;
+
+        function showImage(index) {
+            const images = card.getElementsByTagName('img');
+
+            if (index >= 0 && index < images.length) {
+                for (let i = 0; i < images.length; i++) {
+                    images[i].classList.remove('show');
+                }
+
+                images[index].classList.add('show');
+                currentIndex = index;
+
+                // Show/hide the dots based on the current image index
+                const dots = card.getElementsByClassName('dot');
+                for (let i = 0; i < dots.length; i++) {
+                    dots[i].style.display = i === index ? 'block' : 'none';
+                }
+            }
+        }
+
+        function rotateLeft() {
+            const totalImages = card.getElementsByTagName('img').length;
+            const nextIndex = (currentIndex + 1) % totalImages;
+            showImage(nextIndex);
+        }
+
+        function rotateRight() {
+            const totalImages = card.getElementsByTagName('img').length;
+            const nextIndex = (currentIndex - 1 + totalImages) % totalImages;
+            showImage(nextIndex);
+        }
+
+        function smoothRotate() {
+            if (rotationSpeed !== 0) {
+                const totalImages = card.getElementsByTagName('img').length;
+                const nextIndex = (currentIndex - rotationSpeed + totalImages) % totalImages;
+                showImage(nextIndex);
+                rotationSpeed *= 0.95; // Adjust the rotation speed to gradually slow down
+                requestAnimationFrame(smoothRotate);
+            }
+        }
+
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'ArrowLeft') {
+                rotateLeft();
+            } else if (event.key === 'ArrowRight') {
+                rotateRight();
+            }
+        });
+
+        card.addEventListener('mousedown', function(event) {
+            isDragging = true;
+            startPositionX = event.clientX;
+            lastPositionX = startPositionX;
+            rotationSpeed = 0;
+        });
+
+        card.addEventListener('mousemove', function(event) {
+            if (isDragging) {
+                const currentPositionX = event.clientX;
+                const movementX = currentPositionX - lastPositionX;
+                rotationSpeed = movementX;
+                lastPositionX = currentPositionX;
+            }
+        });
+
+        card.addEventListener('mouseup', function() {
+            isDragging = false;
+            requestAnimationFrame(smoothRotate);
+        });
+
+        card.addEventListener('mouseleave', function() {
+            isDragging = false;
+            requestAnimationFrame(smoothRotate);
+        });
+
+        // Show the initial image
+        showImage(currentIndex);
+
+        function togglePopup(dot) {
+            var popup = dot.nextElementSibling;
+            if (popup.style.visibility === "visible") {
+                popup.style.visibility = "hidden";
+                popup.style.opacity = 1;
+            } else {
+                popup.style.visibility = "visible";
+                popup.style.opacity = 1;
+            }
+        }
+    </script>
+</body>
+</html>

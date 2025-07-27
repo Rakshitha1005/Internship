@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>360 view</title>
+    <link rel="stylesheet" type="text/css" href="style1.css">
+
+</head>
+<body>
+    <div class="card" id="card">
+        <span style="--i:0;"></span>
+        <img src="img/iPhone0.jpg">
+        <span style="--i:1;"></span>
+        <img src="img/iPhone1.jpg">
+        <span style="--i:2;"></span>
+        <img src="img/iPhone2.jpg">
+        <span style="--i:3;"></span>
+        <img src="img/iPhone3.jpg">
+        <span style="--i:4;"></span>
+        <img src="img/iPhone4.jpg">
+        <span style="--i:5;"></span>
+        <img src="img/iPhone5.jpg">
+    </div>
+
+    <script>
+        const card = document.getElementById('card');
+        let currentIndex = 0;
+
+        function showImage(index) {
+            const images = card.getElementsByTagName('img');
+
+            if (index >= 0 && index < images.length) {
+                for (let i = 0; i < images.length; i++) {
+                    images[i].classList.remove('show');
+                }
+
+                images[index].classList.add('show');
+                currentIndex = index;
+            }
+        }
+
+        function rotateLeft() {
+            const totalImages = card.getElementsByTagName('img').length;
+            const nextIndex = (currentIndex + 1) % totalImages;
+            showImage(nextIndex);
+        }
+
+        function rotateRight() {
+            const totalImages = card.getElementsByTagName('img').length;
+            const nextIndex = (currentIndex - 1 + totalImages) % totalImages;
+            showImage(nextIndex);
+        }
+
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'ArrowLeft') {
+                rotateLeft();
+            } else if (event.key === 'ArrowRight') {
+                rotateRight();
+            }
+        });
+
+        card.addEventListener('click', function(event) {
+            const mouseX = event.clientX;
+            const cardWidth = card.offsetWidth;
+
+            if (mouseX < cardWidth / 2) {
+                rotateRight();
+            } else {
+                rotateLeft();
+            }
+        });
+
+        // Show the initial image
+        showImage(currentIndex);
+    </script>
+</body>
+</html>

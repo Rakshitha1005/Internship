@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HONDA BIKE</title>
+    <style>
+        .H {
+            color: black;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 40px;
+            text-align: center;
+        }
+
+        .img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: auto;
+            margin-top: auto;
+            height: 600px;
+            width: 800px;
+            position: relative;
+        }
+
+        .popup {
+            position: absolute;
+            background-color: #f9f9f9;
+            color: #000;
+            text-align: center;
+            border-radius: 6px;
+            padding: 8px;
+            visibility: hidden;
+            opacity: 1;
+            transition: opacity 15s;
+            font-size: 13px;
+        }
+
+        .dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background-color: red;
+            position: absolute;
+            cursor: pointer;
+        }
+
+        .popup::after {
+            content: "";
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            margin-left: -5px;
+            border-width: 5px;
+            border-style: solid;
+            border-color: transparent transparent #f9f9f9 transparent;
+        }
+
+        .dot:hover + .popup {
+            visibility: visible;
+            opacity: 5;
+        }
+
+        ul {
+            font-size: 12px;
+            text-align: justify;
+        }
+
+        .p1{
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 15px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="H">HONDA &nbsp; 2-WHEELER</h1>
+    <div class="img">
+        <img src="img/BIKE 2.jpg" class="img">
+
+        <div class="dot" style="top: 18%; left: 40%;" onclick="togglePopup(this)"></div>
+        <div class="popup" style="top: 23%; left: 40%;">
+            <strong class="p1">Headlight</strong>
+        </div>
+
+        <div class="dot" style="top: 5%; left: 56%;" onclick="togglePopup(this)"></div>
+        <div class="popup" style="top: 10%; left: 56%;">
+            <strong class="p1">Mirror</strong>
+        </div>
+
+        <div class="dot" style="top: 70%; left: 25%;" onclick="togglePopup(this)"></div>
+        <div class="popup" style="top: 75%; left: 25%;">
+            <strong class="p1">Wheel</strong>
+        </div>
+
+        <div class="dot" style="top: 42%; left: 56%;" onclick="togglePopup(this)"></div>
+        <div class="popup" style="top: 47%; left: 56%;">
+            <strong class="p1">Seat</strong>
+        </div>
+
+        <div class="dot" style="top: 70%; left: 65%;" onclick="togglePopup(this)"></div>
+        <div class="popup" style="top: 75%; left: 65%;">
+            <strong class="p1">Flywheel</strong>
+        </div>
+    </div>
+
+    <script>
+        function togglePopup(dot) {
+            var popup = dot.nextElementSibling;
+            if (popup.style.visibility === "visible") {
+                popup.style.visibility = "hidden";
+                popup.style.opacity = 0;
+            } else {
+                popup.style.visibility = "visible";
+                popup.style.opacity = 1;
+            }
+        }
+    </script>
+</body>
+</html>

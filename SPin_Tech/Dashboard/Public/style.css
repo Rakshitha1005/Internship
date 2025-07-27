@@ -1,0 +1,432 @@
+
+    .card-container {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      grid-gap: 20px;
+    }
+    .card-container1 {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-gap: 20px;
+      }
+    
+    .card {
+      width: 70%;
+      background-color: #222b48;
+      border-radius: 5%;
+      padding: 25px;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      height: 75px;
+      align-content: space-evenly;
+      display: block;
+      margin-left: auto;
+      margin-right: auto; 
+    }
+    .card1 {
+      width: 80%;
+      background-color: #222b48;
+      border-radius: 5%;
+      padding: 10px;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      height: 150px;
+      align-items: center;
+      align-content: space-evenly;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+     
+    .progress-bar1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 30px;
+        float: right;
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        background: 
+        radial-gradient(closest-side, white 79%, transparent 80% 100%),
+        conic-gradient( #16FF00 100%,#FF0000 0%);    
+    }
+
+    .progress-bar1::before{
+        content: "100%";
+    }  
+    
+    .progress-bar2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 30px;
+        float: right;
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        background: 
+        radial-gradient(closest-side, white 79%, transparent 80% 100%),
+        conic-gradient( #16FF00 95%,#FF0000 5%);    
+    }
+
+    .progress-bar2::before{
+        content: "95%";
+    }  
+
+    .progress-bar3 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 30px;
+        float: right;
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        background: 
+        radial-gradient(closest-side, white 79%, transparent 80% 100%),
+        conic-gradient( #16FF00 90%,#FF0000 10%);    
+    }
+
+    .progress-bar3::before{
+        content: "90%";
+    }  
+
+    .progress-bar4 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 30px;
+        float: right;
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        background: 
+        radial-gradient(closest-side, white 79%, transparent 80% 100%),
+        conic-gradient( #16FF00 85%,#FF0000 15%);    
+    }
+
+    .progress-bar4::before{
+        content: "85%";
+    }  
+
+    .progress-bar5 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 30px;
+        float: right;
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        background: 
+        radial-gradient(closest-side, white 79%, transparent 80% 100%),
+        conic-gradient( #16FF00 80%,#FF0000 20%);    
+    }
+
+    .progress-bar5::before{
+        content: "80%";
+    } 
+    
+    .progress-bar6 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 30px;
+        float: right;
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        background: 
+        radial-gradient(closest-side, white 79%, transparent 80% 100%),
+        conic-gradient( #16FF00 75%,#FF0000 25%);    
+    }
+
+    .progress-bar6::before{
+        content: "75%";
+    }  
+
+    .progress-bar7 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 30px;
+        float: right;
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        background: 
+        radial-gradient(closest-side, white 79%, transparent 80% 100%),
+        conic-gradient( #16FF00 70%,#FF0000 30%);    
+    }
+
+    .progress-bar7::before{
+        content: "70%";
+    } 
+    
+    .progress-bar8 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 30px;
+        float: right;
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        background: 
+        radial-gradient(closest-side, white 79%, transparent 80% 100%),
+        conic-gradient( #16FF00 65%,#FF0000 35%);    
+    }
+
+    .progress-bar8::before{
+        content: "65%";
+    }  
+
+    .progress-bar9 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 30px;
+        float: right;
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        background: 
+        radial-gradient(closest-side, white 79%, transparent 80% 100%),
+        conic-gradient( #16FF00 60%,#FF0000 40%);    
+    }
+
+    .progress-bar9::before{
+        content: "60%";
+    }
+    
+    .progress-bar10 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 30px;
+        float: right;
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        background: 
+        radial-gradient(closest-side, white 79%, transparent 80% 100%),
+        conic-gradient( #16FF00 55%,#FF0000 45%);    
+    }
+
+    .progress-bar10::before{
+        content: "55%";
+    }
+    
+    .progress-bar11 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 30px;
+        float: right;
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        background: 
+        radial-gradient(closest-side, white 79%, transparent 80% 100%),
+        conic-gradient( #16FF00 50%,#FF0000 50%);    
+    }
+
+    .progress-bar11::before{
+        content: "50%";
+    }  
+
+    .progress-bar12 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 30px;
+        float: right;
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        background: 
+        radial-gradient(closest-side, white 79%, transparent 80% 100%),
+        conic-gradient( #16FF00 45%,#FF0000 55%);    
+    }
+
+    .progress-bar12::before{
+        content: "45%";
+    }
+    
+    .progress-bar13 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 30px;
+        float: right;
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        background: 
+        radial-gradient(closest-side, white 79%, transparent 80% 100%),
+        conic-gradient( #16FF00 40%,#FF0000 60%);    
+    }
+
+    .progress-bar13::before{
+        content: "40%";
+    }  
+
+    .progress-bar14 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 30px;
+        float: right;
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        background: 
+        radial-gradient(closest-side, white 79%, transparent 80% 100%),
+        conic-gradient( #16FF00 35%,#FF0000 65%);    
+    }
+
+    .progress-bar14::before{
+        content: "35%";
+    }  
+
+    .progress-bar15 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 30px;
+        float: right;
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        background: 
+        radial-gradient(closest-side, white 79%, transparent 80% 100%),
+        conic-gradient( #16FF00 30%,#FF0000 70%);    
+    }
+
+    .progress-bar15::before{
+        content: "30%";
+    }  
+
+    .progress-bar16 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 30px;
+        float: right;
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        background: 
+        radial-gradient(closest-side, white 79%, transparent 80% 100%),
+        conic-gradient( #16FF00 25%,#FF0000 75%);    
+    }
+
+    .progress-bar16::before{
+        content: "25%";
+    }  
+
+    .progress-bar17 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 30px;
+        float: right;
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        background: 
+        radial-gradient(closest-side, white 79%, transparent 80% 100%),
+        conic-gradient( #16FF00 20%,#FF0000 80%);    
+    }
+
+    .progress-bar17::before{
+        content: "20%";
+    }  
+
+    .progress-bar18 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 30px;
+        float: right;
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        background: 
+        radial-gradient(closest-side, white 79%, transparent 80% 100%),
+        conic-gradient( #16FF00 15%,#FF0000 85%);    
+    }
+
+    .progress-bar18::before{
+        content: "15%";
+    }  
+
+    .progress-bar19 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 30px;
+        float: right;
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        background: 
+        radial-gradient(closest-side, white 79%, transparent 80% 100%),
+        conic-gradient( #16FF00 10%,#FF0000 90%);    
+    }
+
+    .progress-bar19::before{
+        content: "10%";
+    }  
+
+    .progress-bar20 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 30px;
+        float: right;
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        background: 
+        radial-gradient(closest-side, white 79%, transparent 80% 100%),
+        conic-gradient( #16FF00 5%,#FF0000 95%);    
+    }
+
+    .progress-bar20::before{
+        content: "5%";
+    }  
+
+    .H{
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 50px;
+        font-weight: bold;
+        color:whitesmoke;
+        text-align: center;
+    }
+
+    .H1{
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 22px;
+        text-align: justify;
+        color: whitesmoke;
+    }
+
+    .H2{
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 28px;
+        text-align: center;
+        color: whitesmoke;
+    }
+
+    .P1{
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 20px;
+        text-align: justify;
+        line-height: 0.7;
+        color: whitesmoke;
+        
+        
+    }
+    
+  

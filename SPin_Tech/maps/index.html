@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>KARNATAKA MAP</title>
+    <style>
+        .H {
+            color: black;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 40px;
+            text-align: center;
+        }
+
+        .img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: auto;
+            margin-top: auto;
+            height: 700px;
+            width: 500px;
+            border: 5px solid silver;
+            position: relative;
+        }
+
+        .popup {
+            position: absolute;
+            background-color: #f9f9f9;
+            color: #000;
+            text-align: center;
+            border-radius: 6px;
+            padding: 8px;
+            visibility: hidden;
+            opacity: 1;
+            transition: opacity 10s;
+            font-size: 13px;
+            max-width: 200px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background-color: #000;
+            position: absolute;
+            cursor: pointer;
+        }
+
+        .popup::after {
+            content: "";
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            margin-left: -5px;
+            border-width: 5px;
+            border-style: solid;
+            border-color: transparent transparent #f9f9f9 transparent;
+        }
+
+        .dot:hover + .popup {
+            visibility: visible;
+            opacity: 1;
+        }
+
+        ul {
+            font-size: 12px;
+            text-align: justify;
+            padding-left: 0;
+            list-style-type: none;
+            margin-top: 0;
+        }
+
+        li {
+            margin-bottom: 6px;
+        }
+
+        /* Toggle button styles */
+        .btn {
+            border: none;
+            outline: none;
+            padding: 12px 16px;
+            background-color: #f1f1f1;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: #ddd;
+        }
+
+        .btn.active {
+            background-color: #666;
+            color: white;
+        }
+
+        /* Grid view */
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .column {
+            flex: 50%;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="H">KARNATAKA</h1>
+    <div class="img">
+        <img src="img/map.jpg" class="img">
+
+        <div class="dot" style="top: 28%; left: 42%;" onclick="togglePopup(this)"></div>
+        <div class="popup" style="top: 28%; left: 42%;">
+            <h3>Popular Places In Bijapur</h3>
+            <ul>
+                <li>Gol Gumbaz</li>
+                <li>Jamaiya Masjid</li>
+                <li>Fort Bijapur</li>
+            </ul>
+        </div>
+
+        <div class="dot" style="top: 60%; left: 25%;" onclick="togglePopup(this)"></div>
+        <div class="popup" style="top: 60%; left: 25%;">
+            <h3>Popular Places In Shimoga</h3>
+            <ul>
+                <li>Jog Falls</li>
+                <li>Agumbe</li>
+                <li>Keladi</li>
+            </ul>
+        </div>
+
+        <div class="dot" style="top: 48%; left: 56%;" onclick="togglePopup(this)"></div>
+        <div class="popup" style="top: 48%; left: 56%;">
+            <h3>Popular Places In Ballary</h3>
+            <ul>
+                <li>Hampi</li>
+                <li>Ballary Fort</li>
+                <li>Lakshmi Narasimha Temple</li>
+            </ul>
+        </div>
+
+        <div class="dot" style="top: 75%; left: 60%;" onclick="togglePopup(this)"></div>
+        <div class="popup" style="top: 75%; left: 60%;">
+            <h3>Popular Places In Tumkur</h3>
+            <ul>
+                <li>Devarayana Durga</li>
+                <li>Shivagange</li>
+                <li>Mandaragiri Jain Temple</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Toggle buttons -->
+    <div id="btnContainer">
+        <button class="btn" onclick="listView()"><i class="fa fa-bars"></i> List</button> 
+        <button class="btn active" onclick="gridView()"><i class="fa fa-th-large"></i> Grid</button>
+    </div>
+
+    <script>
+        function togglePopup(dot) {
+            var popup = dot.nextElementSibling;
+            if (popup.style.visibility === "visible") {
+                popup.style.visibility = "hidden";
+                popup.style.opacity = 0;
+            } else {
+                popup.style.visibility = "visible";
+                popup.style.opacity = 1;
+            }
+        }
+
+        // Get the elements with class="column"
+        var elements = document.getElementsByClassName("column");
+
+        //List View
+       /* function listView() {
+            for (var i = 0; i < elements.length; i++) {
+                elements[i].style.width = "100%";
+            }
+        }
+
+        // Grid View
+        function gridView() {
+            for (var i = 0; i < elements.length; i++) {
+                elements[i].style.width = "50%";
+            }
+        }*/
+
+        /* Optional: Add active class to the current button (highlight it) */
+        var container = document.getElementById("btnContainer");
+        var btns = container.getElementsByClassName("btn");
+        for (var i = 0; i < btns.length; i++) {
+            btns[i].addEventListener("click", function() {
+                var current = document.getElementsByClassName("active");
+                current[0].className = current[0].className.replace(" active", "");
+                this.className += " active";
+            });
+        }
+    </script>
+</body>
+</html>
